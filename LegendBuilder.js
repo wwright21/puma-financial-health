@@ -44,7 +44,7 @@ function getColor1(d) {
 }
 
 var legend_one = L.control({position: 'bottomleft'});  
-    legend_one.onAdd = function (map_bfb4429249f531667da13bf8ebb52d3c) {
+    legend_one.onAdd = function (map_c8bfb8545f8726bb666cc5079e490204) {
 
     var div = L.DomUtil.create('div', 'info legend'),
         grades = [0, 21.6, 27.9, 32.5, 42.8, 50.5],
@@ -63,7 +63,7 @@ var legend_one = L.control({position: 'bottomleft'});
         return div;
         };
 
-legend_one.addTo(map_bfb4429249f531667da13bf8ebb52d3c);
+legend_one.addTo(map_c8bfb8545f8726bb666cc5079e490204);
 
 
 // add legend for choropleth layer 2-----------------------------------------
@@ -77,7 +77,7 @@ function getColor2(d) {
 }
 
 var legend_two = L.control({position: 'bottomleft'});  
-    legend_two.onAdd = function (map_08268fcfdee5f3cc16dd4cb04e306110) {
+    legend_two.onAdd = function (map_c8bfb8545f8726bb666cc5079e490204) {
 
     var div = L.DomUtil.create('div', 'info legend'),
         grades = [0, 40.4, 55.0, 63.5, 71.2, 79.9],
@@ -107,7 +107,7 @@ function getColor3(d) {
 }
 
 var legend3 = L.control({position: 'bottomleft'});  
-    legend3.onAdd = function (map_08268fcfdee5f3cc16dd4cb04e306110) {
+    legend3.onAdd = function (map_c8bfb8545f8726bb666cc5079e490204) {
 
     var div = L.DomUtil.create('div', 'info legend'),
         grades = [0, 618, 649, 679, 704, 725],
@@ -129,7 +129,7 @@ var legend3 = L.control({position: 'bottomleft'});
 
 
 // Add and remove layers
-map_08268fcfdee5f3cc16dd4cb04e306110.on('baselayerchange', function (eventLayer) {
+map_c8bfb8545f8726bb666cc5079e490204.on('baselayerchange', function (eventLayer) {
     // adding first legend
     if (eventLayer.name === 'Share of Residents with Delinquent Debt') {
         this.removeControl(legend_two);
