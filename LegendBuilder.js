@@ -1,38 +1,4 @@
-// LEGEND BUILDER STARTS HERE------------------------------------------------
-// CSS - CUT / PASTE TO HEAD AFTER THE FOLIUM TOOLTIPS
-<style>
-
-    .legend {
-        color: #434343;
-        padding: 6px 8px;
-        font: 16px/18px Arial, Helvetica, sans-serif;
-        background: rgba(255, 255, 255, 0.7);
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        border-radius: 6px;
-        border:2px solid grey; 
-        bottom:5px; 
-        left:5px; 
-    }
-
-    .legend h4 {
-        margin-top: 2px;
-        margin-bottom: -10px;
-        color: #434343;
-        font-size: 16px;
-        }
-
-    .legend i {
-        width: 18px;
-        height: 18px;
-        float: left;
-        margin-right: 8px;
-        opacity: 0.8;
-    }
-
-</style>
-
 // ADD TO BOTTOM OF SCRIPT FILE
-
 // add legend for choropleth layer 1-----------------------------------------
 function getColor1(d) {
     return d > 50.5  ? '#bd0026' :
