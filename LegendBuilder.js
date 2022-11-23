@@ -23,7 +23,7 @@ var legend_one = L.control({position: 'bottomleft'});
 
     labels.push(
         '<i style="background:' + getColor1(from + 1) + '"></i> ' +
-        from + (to ? '&ndash;' + to + '%' : '%+'));
+        from + (to ? ' &ndash; ' + to + '%' : '%+'));
         }
         div.innerHTML = labels.join('<br>');
         return div;
@@ -56,7 +56,7 @@ var legend_two = L.control({position: 'bottomleft'});
 
     labels.push(
         '<i style="background:' + getColor2(from + 1) + '"></i> ' +
-        from + (to ? '&ndash;' + to + '%' : '%+'));
+        from + (to ? ' &ndash; ' + to + '%' : '%+'));
         }
         div.innerHTML = labels.join('<br>');
         return div;
@@ -86,7 +86,7 @@ var legend3 = L.control({position: 'bottomleft'});
 
     labels.push(
         '<i style="background:' + getColor3(from + 1) + '"></i> ' +
-        from + (to ? '&ndash;' + to : '+'));
+        from + (to ? ' &ndash; ' + to : '+'));
         }
         div.innerHTML = labels.join('<br>');
         return div;
